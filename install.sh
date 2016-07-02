@@ -5,8 +5,14 @@
 INSDIR=$(realpath "$0")
 INSDIR=${INSDIR%/*}
 
-[ ! -d ~/.local/bin ] && mkdir -p ~/.local/bin
+if [ -e ~/scripts ]; then
+	mv ~/scripts ~/scripts_
+	echo "~/scripts already exists. It has been moved to ~/scripts_"
+fi
 
+ln -s ${INSDIR} ~/scripts
+
+[ ! -d ~/.local/bin ] && mkdir -p ~/.local/bin
 # Executables that should be in $PATH
 for file in startx; do
 	ln -s ${INSDIR}/${file} ~/.local/bin/${file}
