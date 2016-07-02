@@ -6,4 +6,4 @@
 ###	fi
 
 killall xss-lock
-xss-lock -- ~/scripts/i3lock-blurry/i3lock-blurry &
+/usr/bin/xss-lock -- ~/scripts/i3lock-blurry/i3lock-blurry &

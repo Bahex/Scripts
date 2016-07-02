@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Ncmpcpp
+Type=Application
+Comment=Ncurses client for MPD
+Terminal=true
+Exec=~/scripts/apps/zz-ncmpcpp.sh
+Icon=ncmpcpp
+Categories=ConsoleOnly;Media;
+GenericName=Music Player

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Youtube
+Type=Application
+Comment=Zenity frontend for mpv and youtube-dl
+Terminal=false
+Exec=~/scripts/apps/zz-youtube.sh
+Icon=Youtube
+Categories=Media;
+GenericName=Media Selector

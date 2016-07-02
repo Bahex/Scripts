@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Cava
+Type=Application
+Comment=Ncurses visualizer for MPD
+Terminal=false
+Exec=~/scripts/apps/zz-cava.sh
+Categories=ConsoleOnly;Media;
+GenericName=Visualizer

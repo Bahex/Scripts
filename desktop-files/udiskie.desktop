@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Udiskie
+Type=Application
+Comment=Automount tool.
+Terminal=false
+Exec=/usr/bin/udiskie -aNt
+Categories=Storage;
