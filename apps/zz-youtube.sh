@@ -9,5 +9,5 @@ $DEFAULTPLAYER \
 	$(zenity --entry --title="Youtube"\
 		--text "Enter the URL to the video:"\
 		--entry-text="$CLIPCONTENT")\
-	--title="Youtube"
-#--ytdl-format=22
+	--title="Youtube"\
+	--ytdl-format="[height <=? 720]"
