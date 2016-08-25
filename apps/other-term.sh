@@ -1,4 +1,1 @@
-#!/bin/sh
-xrdb -override $XFILES/Xresources.d/URxvt/transparency-true
-urxvt &
-xrdb $XFILES/Xresources
+urxvt -bg rgba:0000/3000/3000/ffff &
