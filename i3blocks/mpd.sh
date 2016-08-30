@@ -12,6 +12,7 @@ filter() {
 }
 
 case $BLOCK_BUTTON in
+    1) pidof mpd > /dev/null || mpd ;;   # left click, start if not working
     3) mpc $password toggle | filter ;;  # right click, pause/unpause
     4) mpc $password prev   | filter ;;  # scroll up, previous
     5) mpc $password next   | filter ;;  # scroll down, next
