@@ -3,6 +3,6 @@
 
 export i=1
 cat $1 | while read line; do
-    echo "$i →  ${line}"
+    echo "$i →  ${line}" | fold -s -w 40
     i=$((i+1))
 done
