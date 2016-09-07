@@ -28,8 +28,4 @@ ext_cvr(){
     fi
 }
 
-while true; do
-    if mpc idle | grep "player" > /dev/null; then
-        ext_cvr
-    fi
-done
+while true; do mpc idle | grep "player" > /dev/null && ext_cvr; done
