@@ -10,7 +10,7 @@ sdir=${sdir%/*}
 
 #Find images in album's directory
 albumart_in_dir(){
-    cvrs="$(find "${MPD_CURRENT%/*}" -type d -exec find {} -maxdepth 1 -type f -iregex ".*/.*\(${MPD_ALBUM}\|cover\|folder\|artwork\|front\).*[.]\(jpe?g\|png\|gif\|bmp\)" \; )"
+    cvrs="$(find "${MPD_CURRENT%/*}" -maxdepth 0 -type d -exec find {} -maxdepth 1 -type f -iregex ".*/.*\(${MPD_ALBUM}\|cover\|folder\|artwork\|front\).*[.]\(jpe?g\|png\|gif\|bmp\)" \; )"
     echo -n "$cvrs" | head -n 1
 }
 
